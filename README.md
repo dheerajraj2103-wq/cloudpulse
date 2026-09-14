@@ -8,11 +8,11 @@ The project recreates the idea of bringing multiple infrastructure environments 
 
 ## Live Demo
 
-> Add the deployed Vercel URL here before submission.
+https://cloudpulse-two.vercel.app/
 
 ## GitHub
 
-> Add the public GitHub repository URL here before submission.
+https://github.com/dheerajraj2103-wq/cloudpulse
 
 ---
 
@@ -76,7 +76,7 @@ The experience is structured as a visual story rather than a collection of unrel
 
 Cloud providers enter the viewport sequentially.
 
-Animated connection lines then converge toward the central resource-analysis node.
+Animated connection lines converge toward the central resource-analysis node.
 
 ### Stage 2 — Resource Intelligence
 
