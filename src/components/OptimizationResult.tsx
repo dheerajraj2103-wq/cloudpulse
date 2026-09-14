@@ -53,10 +53,7 @@ export function OptimizationResult({
   const entries = Object.entries(
     resource.metrics,
   ) as Array<
-    [
-      keyof typeof metricLabels,
-      number,
-    ]
+    [keyof typeof metricLabels, number]
   >
 
   const [metricKey, metricValue] = entries.reduce(
@@ -167,7 +164,10 @@ export function OptimizationResult({
           </div>
         </div>
 
-        <div className="optimization-result__arrow">
+        <div
+          className="optimization-result__arrow"
+          aria-hidden="true"
+        >
           →
         </div>
 
@@ -176,13 +176,34 @@ export function OptimizationResult({
             RECOMMENDED ACTION
           </span>
 
-          <h3>
-            {recommendation.title}
-          </h3>
+          <h3>{recommendation.title}</h3>
+
+          <p>{recommendation.description}</p>
+        </div>
+      </div>
+
+      <div className="optimization-result__payoff">
+        <div>
+          <span className="signal-label">
+            OPTIMIZATION OPPORTUNITY
+          </span>
+
+          <strong>
+            {resource.potentialSavings}%
+          </strong>
 
           <p>
-            {recommendation.description}
+            Illustrative optimization headroom based
+            on the analyzed resource profile.
           </p>
+        </div>
+
+        <div
+          className="optimization-result__payoff-badge"
+          aria-hidden="true"
+        >
+          <span />
+          READY TO OPTIMIZE
         </div>
       </div>
 
